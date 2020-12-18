@@ -122,6 +122,6 @@ io.on('connection', (socket: socketIO.Socket) => {
 server.listen(port);
 (async () => {
 	if (!address)
-		address = `http://${await publicIp.v4()}:${port}`;
-	logger.info('CrewLink Server started: %s', address);
+		address = `https://crewlink.soveticka.eu:${port}`;
+	logger.info('CrewLink Server started: <b>%s</b>', address);
 })();
